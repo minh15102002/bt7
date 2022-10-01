@@ -6,7 +6,9 @@ import Signin from './wellcome/signin';
 import MainNavigator from './wellcome/nav';
 export default function App() {
   return (
-    <MainNavigator></MainNavigator>
+    <MainNavigator>
+
+     </MainNavigator>
   );
 }
 const styles = StyleSheet.create({

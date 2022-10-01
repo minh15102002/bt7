@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import { 
-    Text, View, Image, StyleSheet, TextInput, TouchableOpacity
+    Text, View, Image, StyleSheet, TextInput,TouchableOpacity
 
 } from 'react-native'
-// import { TouchableOpacity } from 'react-native-web';
 
-export default class Intro extends Component {
-  render() {
-    const {navigation} = this.props
+
+const Intro=({navigation})=>{
     return (
       <View style={styles.container}>
-        <Text style={{color: '#5FDFFA', fontWeight: 'bold', fontSize: 20, marginBottom: 50, marginTop: 100}}>WELLCOME TO MY APP</Text>
+        <Text style={{color: '#e34646', fontWeight: 'bold', fontSize: 20, marginBottom: 50, marginTop: 100}}>WELLCOME</Text>
         <Image
             style={styles.tinyLogo}
             source={require('./img/brg.png')}
@@ -25,12 +23,11 @@ export default class Intro extends Component {
           style={styles.singup}
           onPress={()=>{navigation.navigate('Signup')}}  
         >
-            <Text style={{color: '#5FDFFA', fontWeight: 'bold'}}>Sign up</Text>
+            <Text style={{color: '#e34646', fontWeight: 'bold'}}>Sign up</Text>
         </TouchableOpacity>
       </View>
     )
   }
-}
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -46,7 +43,7 @@ const styles = StyleSheet.create({
     login:{
         width: 200,
         height: 50,
-        backgroundColor: '#5FDFFA',
+        backgroundColor: '#e34646',
         borderRadius: 40,
         margin: 10,
         justifyContent: 'center',
@@ -55,10 +52,11 @@ const styles = StyleSheet.create({
     singup:{
         width: 200,
         height: 50,
-        borderColor: '#5FDFFA',
+        borderColor: '#e34646',
         borderWidth: 1,
         borderRadius: 40,
         justifyContent: 'center',
         alignItems: 'center',
     }
   });
+  export default Intro;
