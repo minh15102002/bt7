@@ -11,20 +11,21 @@ const Intro=({navigation})=>{
         <Text style={{color: '#e34646', fontWeight: 'bold', fontSize: 20, marginBottom: 50, marginTop: 100}}>WELLCOME</Text>
         <Image
             style={styles.tinyLogo}
-            source={require('./img/brg.png')}
+            source={require('./img/imagesdongho.png')}
         />
         <TouchableOpacity 
           style={styles.login}
           onPress={()=>{navigation.navigate('Signin')}}
         >
-            <Text style={{color: '#fff', fontWeight: 'bold'}}>Log in</Text>
+            <Text style={{color: '#fff', fontWeight: 'bold'}}>Đăng nhập</Text>
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.singup}
           onPress={()=>{navigation.navigate('Signup')}}  
         >
-            <Text style={{color: '#e34646', fontWeight: 'bold'}}>Sign up</Text>
+            <Text style={{color: '#e34646', fontWeight: 'bold'}}>Đăng ký</Text>
         </TouchableOpacity>
+       
       </View>
     )
   }
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
         borderRadius: 40,
         justifyContent: 'center',
         alignItems: 'center',
-    }
+    },
+    
   });
   export default Intro;

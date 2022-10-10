@@ -13,28 +13,28 @@ const Signup=({navigation})=>{
               style={{width: 20, height: 20,marginHorizontal:10, marginVertical: 45}}
             />
           </TouchableOpacity>
-          <Text style={{fontWeight: 'bold', fontSize:20, color:'#e34646', marginHorizontal: 10, marginVertical: 40}}>CREATE NEW ACCOUNT</Text>
+          <Text style={{fontWeight: 'bold', fontSize:20, color:'#e34646', marginHorizontal: 10, marginVertical: 40}}>Tạo tài khoản</Text>
         </View>
         <View style={{flex: 1, justifyContent:'center', alignItems:'center'}}>
             <TextInput
                 style={styles.input}
-                placeholder='Full Name'
+                placeholder='Tên đăng nhập'
             />
             <TextInput
                 style={styles.input}
-                placeholder='Phone Number'
+                placeholder='Số điện thoại'
             />
             <TextInput
                 style={styles.input}
-                placeholder='Email Adess'
+                placeholder='Địa chỉ Email'
             />
             <TextInput
                 style={styles.input}
-                placeholder='Password'
+                placeholder='Mật khẩu'
                 secureTextEntry={true}
             />
             <TouchableOpacity style={styles.singup}>
-                 <Text style={{color: '#fff', fontWeight: 'bold'}}>Sign up</Text>
+                 <Text style={{color: '#fff', fontWeight: 'bold'}}>Đăng ký</Text>
              </TouchableOpacity>
         </View>
         

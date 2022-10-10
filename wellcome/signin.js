@@ -30,32 +30,47 @@ tokenlogin()
               style={{width: 20, height: 20,marginHorizontal:10, marginVertical: 45}}
             />
           </TouchableOpacity>
-          <Text style={{fontWeight: 'bold', fontSize:20, color:'#e34646', marginHorizontal: 10, marginVertical: 40}}>SIGN IN</Text>
+          <Text style={{fontWeight: 'bold', fontSize:20, color:'#e34646', marginHorizontal: 10, marginVertical: 40}}>Đăng nhập</Text>
         </View>
         
         <View style={{flex: 1, justifyContent:'center', alignItems:'center'}}>
             <TextInput
                 style={styles.input}
-                placeholder='Username'
+                placeholder='Tên đăng nhập'
                 onChangeText={(value) => setUsername(value)}
             />
             <TextInput
                 style={styles.input}
-                placeholder='Password'
+                placeholder='Mật khẩu'
                 secureTextEntry onChangeText={(value) => setPassword(value)}
             />
             <TouchableOpacity style={styles.singup} onPress={onSubmit}>
-                 <Text style={{color: '#fff', fontWeight: 'bold'}}>Log in</Text>
+                 <Text style={{color: '#fff', fontWeight: 'bold'}}>Đăng nhập</Text>
              </TouchableOpacity>
-            <Text  style={{marginVertical: 50}}>OR</Text>
-            <TouchableOpacity style={styles.singup}>
-                 <Text style={{color: '#fff', fontWeight: 'bold'}}>FACEBOOK LOGIN</Text>
+            <Text  style={{marginVertical: 50}}>Hoặc</Text>
+            <View style={{flexDirection: 'row'}} >
+            <TouchableOpacity style={styles.singupf}>
+                 <Text style={{color: '#fff', fontWeight: 'bold'}}>f</Text>
             </TouchableOpacity>
+
+
+            <TouchableOpacity style={styles.singupt}>
+            <Text style={{color: '#fff', fontWeight: 'bold'}}>t</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.singupg}>
+            <Text style={{color: '#fff', fontWeight: 'bold'}}>G</Text>
+            </TouchableOpacity>
+           
+            </View>
         </View>
         
       </View>
     )
   }
+
+
+
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -81,6 +96,43 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginTop: 20,
-    }
+    },
+    singupf:{
+      width: 30,
+      height: 30,
+      backgroundColor: '#304adb',
+      borderColor: '#304adb',
+      borderWidth: 1,
+      borderRadius: 40,
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop: 20,
+      marginLeft:10,
+  },
+  singupt:{
+    width: 30,
+    height: 30,
+    backgroundColor: '#a3cee6',
+    borderColor: '#a3cee6',
+    borderWidth: 1,
+    borderRadius: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 20,
+    marginLeft:10,
+},
+singupg:{
+  width: 30,
+  height: 30,
+  backgroundColor: '#f23913',
+  borderColor: '#f23913',
+  borderWidth: 1,
+  borderRadius: 40,
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginTop: 20,
+  marginLeft:10,
+},
+
   });
   export default Signin;
