@@ -5,7 +5,13 @@ import {
 } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 const Home=()=>{
+  const donghonam = async() => {
+   
+    navigation.navigate('donghonam')
+  
+  }
     const logout = async() => {
         await AsyncStorage.removeItem('token')
         navigation.navigate('Login')
@@ -32,7 +38,7 @@ const Home=()=>{
         <Button onPress={logout} title="Log out"/>
         </View>
       </View>   
-      <TouchableOpacity style={styles.item1} onPress={()=>{navigation.navigate('donghonam')}}>
+            <TouchableOpacity style={styles.item1} onPress={donghonam}>
               <Text style={{color: 'black', fontWeight: 'bold'}}>Đồng hồ nam</Text>
             </TouchableOpacity>
 

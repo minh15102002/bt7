@@ -3,7 +3,13 @@ import {
     Text, View, Image, StyleSheet, TextInput,TouchableOpacity
 
 } from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
+// const onSubmit = async() => {
+   
+//         navigation.navigate('donghonam')
+    
+// }
 
 const Idonghonam=({navigation})=>{
     return (
@@ -24,5 +30,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+    tinyLogo: {
+        width: 100,
+        height: 100,
+    },
+    
 });
 export default donghonam;
